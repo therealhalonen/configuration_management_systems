@@ -50,13 +50,13 @@ sudo apt-get install <package_name> | sudo apt-get purge <package_name>
 ```python
 # Masters folder that holds all the instructions as .sls, to minions are in (have to be made first):
 /srv/salt/
-# .sls = states = instructions to slaves are in format:
+# .sls = states = instructions to minions are in format:
 /tmp/filename.txt:
   file.managed:
     - source: salt://filename.txt
 # filename.txt could contain for example:
 Hello World
-# To apply a single state once on all slaves
+# To apply a single state once on all minions
 sudo salt '*' state.apply <statename> # = .sls filename
 
 # For automation. top.sls, in /srv/salt/
