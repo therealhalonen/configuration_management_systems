@@ -11,11 +11,11 @@ I had a one Ubuntu Server 22.10 installed and ready configured as a minion, in V
 I made 3 clones of the same machine.
 I also made a Nat Network in Virtualbox:
 
-![[res/Pasted image 20221105114853.png]]
+![image1](https://github.com/therealhalonen/configuration_management_systems/blob/master/personal%20testing/res/Pasted%20image%2020221105114853.png)
 
 Then i connected all 5 (Master = Debian and 4x Minions = Ubuntu Servers) machines to my newly created NAT Network:
 
-![[res/Pasted image 20221105114956.png]]
+![image2](https://github.com/therealhalonen/configuration_management_systems/blob/master/personal%20testing/res/Pasted%20image%2020221105114956.png)
 Problems started right away, when every machine got the same IP...
 
 First i tried randomizing the mac address from every machines settings in Virtualbox -> Network Adapter. I also did this when i cloned the machines, as there is a dropdown meny to do so automatically... But that didnt work.
@@ -38,7 +38,7 @@ After trial and error, this worked:
 ```
 `dhcp-identifier: mac` so dhcp will be forced to use mac-address as an identifier.
 
-![[res/Pasted image 20221105110315.png]]
+![image3](https://github.com/therealhalonen/configuration_management_systems/blob/master/personal%20testing/res/Pasted%20image%2020221105110315.png)
 
 After that i ran `sudo netplan apply` and voila, new ip was received.
 I did this to each 4 servers and also to my master.
@@ -156,4 +156,5 @@ My tips for cloning a Ubuntu Server 22.10 machine, to use as a minion:
 - If you want to use Nat Network -option, configure netplan, to `dhcp-indentifier: mac` before cloning. And when cloning, use `Mac Address Policy: Generate new MAC addresses for all network adapters`
 - Remember to change `hostname` before installing and configuring `salt-minion` 
 - Last tip: Read and learn how to use [Vagrant](https://www.vagrantup.com/) instead :)
+
 
