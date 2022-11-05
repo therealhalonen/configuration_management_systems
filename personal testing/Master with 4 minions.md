@@ -45,8 +45,9 @@ After that i ran `sudo netplan apply` and voila, new ip was received.
 I did this to each 4 servers and also to my master.
 To verify they were working, i ran `sudo ifconfig -a` in every machine, and saw they all got a new IP from DHCP, and everyone got a different one.
 
-Then proceeded to config 
-In my Master i had already salt-master installed and to all 4 servers had salt-minion as previously explained.
+Then proceeded to config:
+
+In my Master i had already salt-master installed and all 4 servers had salt-minion as previously explained.
 
 Every server i configured the same:
 ```bash
@@ -64,6 +65,7 @@ Done, again, to every server (1-4):
 ~$ sudo hostnamectl set-hostname ubnt_serv<1-4>
 ```
 After prompting authentication, they all had a new hostname, and i rebooted them.
+
 Next up, was the issue, that all of them got their minion ID from the hostname, which was configured before i changed the hostnames.
 On my master i noticed that:
 ```bash
@@ -76,22 +78,23 @@ Rejected Keys:
 ```
 
 `exp` was the hostname of the `Server1` from which i made the 3 clones.
+
 So i had to give them each new Minion IDs.
 This was done with ( again to every server separately ):
 
 [Source and pointers](https://stackoverflow.com/questions/47648183/how-to-seamlessly-rename-a-minion)
 ```bash
-sudoedit /etc/salt/minion_id
+~$ sudoedit /etc/salt/minion_id
 ```
 And replacing my "exp" with `Server<1-4>`
 
 After that, of course again i had to kick the minion daemon.
 ```bash
-sudo systemctl restart salt-minion
+~$ sudo systemctl restart salt-minion
 ```
 I think i had to also kick my master... Im not sure but anyway on my Master:
 ```bash
-sudo systemctl restart salt-master
+~$ sudo systemctl restart salt-master
 ```
 
 And then i checked my pending keys (on my master):
