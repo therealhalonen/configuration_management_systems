@@ -16,6 +16,7 @@ I also made a Nat Network in Virtualbox:
 Then i connected all 5 (Master = Debian and 4x Minions = Ubuntu Servers) machines to my newly created NAT Network:
 
 ![image2](https://github.com/therealhalonen/configuration_management_systems/blob/master/personal%20testing/res/Pasted%20image%2020221105114956.png)
+
 Problems started right away, when every machine got the same IP...
 
 First i tried randomizing the mac address from every machines settings in Virtualbox -> Network Adapter. I also did this when i cloned the machines, as there is a dropdown meny to do so automatically... But that didnt work.
