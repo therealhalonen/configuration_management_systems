@@ -42,7 +42,7 @@ To this assignment, i had an already installed and configured Debian 11 (bullsey
 I used `apache2`, as its the one, im pretty familiar with.   
 Installed apache2:
 ```bash
-sudo apt-get update && sudo apt-get install apache2
+~$ sudo apt-get update && sudo apt-get install apache2
 ```
 
 Next i tested if the daemon is running:
@@ -172,7 +172,7 @@ Then checked, if the daemon was running automatically after the installation:
 
 Next i started to configure my `minion` by installing a Ubuntu Server 22.10 virtual machine, as its pretty lightweight.     
 When i made the machine, i selected a Nat Network, which i had DHCP configured from Virtualbox preferences, ready to be used.   
-![[Pasted image 20221106171909.png]]
+![Image1][https://github.com/therealhalonen/configuration_management_systems/blob/master/h2/res/Nat_Network.png]]
 This `HaloNetwork` is also what my Master uses.
 
 **Nothing special needs to be made during the installation of Ubuntu Server.** 
