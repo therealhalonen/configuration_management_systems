@@ -138,9 +138,9 @@ Now i had configured my Apache2, on my soon to be Master, manually. Next up, was
 
 **Configuring a daemon with `salt` , from Master to Minion**:
 
-First i installed `salt-master`:
-***NOTE!
-If using Ubuntu as a minion and Debian as a Master, like i did, they install different version (Debian has older) from the default repo.
+First i installed `salt-master`:   
+***NOTE!   
+If using Ubuntu as a minion and Debian as a Master, like i did, they install different version (Debian has older) from the default repo.   
 So for Debian i installed the latest with instructions from [SaltProject](https://repo.saltproject.io/#debian):***
 
 ```bash
@@ -172,7 +172,7 @@ Then checked, if the daemon was running automatically after the installation:
 
 Next i started to configure my `minion` by installing a Ubuntu Server 22.10 virtual machine, as its pretty lightweight.     
 When i made the machine, i selected a Nat Network, which i had DHCP configured from Virtualbox preferences, ready to be used.   
-![Image1][https://github.com/therealhalonen/configuration_management_systems/blob/master/h2/res/Nat_Network.png]
+![Image1](https://github.com/therealhalonen/configuration_management_systems/blob/master/h2/res/Nat_Network.png)
 This `HaloNetwork` is also what my Master uses.
 
 **Nothing special needs to be made during the installation of Ubuntu Server.** 
@@ -483,7 +483,7 @@ Done!
 I started this assignment, by installing a fresh new Debian 11 virtual machine to my virtualbox. 
 Theres no special tricks during the installation, but this is a nice ive guide ive used before: [Tero Karvinen: Install Debian on Virtualbox](https://terokarvinen.com/2021/install-debian-on-virtualbox/)
 
-Note: hostname is `homework`
+Note: hostname is `homework`   
 After installation procedure was finished and system was booted and operational, i started with updating the packages and installing updates.
 
 ```bash
