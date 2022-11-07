@@ -172,7 +172,7 @@ Then checked, if the daemon was running automatically after the installation:
 
 Next i started to configure my `minion` by installing a Ubuntu Server 22.10 virtual machine, as its pretty lightweight.     
 When i made the machine, i selected a Nat Network, which i had DHCP configured from Virtualbox preferences, ready to be used.   
-![Image1][https://github.com/therealhalonen/configuration_management_systems/blob/master/h2/res/Nat_Network.png]]
+![Image1][https://github.com/therealhalonen/configuration_management_systems/blob/master/h2/res/Nat_Network.png]
 This `HaloNetwork` is also what my Master uses.
 
 **Nothing special needs to be made during the installation of Ubuntu Server.** 
