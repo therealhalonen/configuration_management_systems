@@ -725,4 +725,4 @@ Working! Now i started to analyze the log.
 
 
 ### d) Vapaaehtoinen: Asenna Salt herra ja orja eri koneille.
-- This i did during the [**a)**](https://github.com/therealhalonen/new_repo/edit/master/readme.md#a-demonin-asetukset-s%C3%A4%C3%A4d%C3%A4-jokin-demoni-asennatee-asetuksettestaa-package-file-service--rakenteella-ensin-k%C3%A4sin-muista-tehd%C3%A4-ja-raportoida-asennus-ensin-k%C3%A4sin-vasta-sitten-automatisoiden-jos-osaat-hyvin-voit-tehd%C3%A4-jonkin-eri-asetuksen-kuin-tunnilla-harjoitusta-varten-tulee-siis-tehd%C3%A4-alusta-ja-raportoida-samalla) part.
+- This i did during the [**a)**](https://github.com/therealhalonen/configuration_management_systems/blob/master/h2/report.md#a-demonin-asetukset-s%C3%A4%C3%A4d%C3%A4-jokin-demoni-asennatee-asetuksettestaa-package-file-service--rakenteella-ensin-k%C3%A4sin-muista-tehd%C3%A4-ja-raportoida-asennus-ensin-k%C3%A4sin-vasta-sitten-automatisoiden-jos-osaat-hyvin-voit-tehd%C3%A4-jonkin-eri-asetuksen-kuin-tunnilla-harjoitusta-varten-tulee-siis-tehd%C3%A4-alusta-ja-raportoida-samalla) part.
