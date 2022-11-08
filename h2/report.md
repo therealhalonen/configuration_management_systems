@@ -235,7 +235,7 @@ humble_servant:
 **Now i wanted to configure it automatically to my Minion:** 
 *( Also: Installing Master and Minion to different machines)*
 
-*Working in my Master:*
+*Working in my Master:*   
 First i made the correct folder and and started to edit `init.sls`
 ```bash
 ~$ sudo mkdir -p /srv/salt/apache2/
@@ -286,9 +286,9 @@ apache2.service:
       - file: /etc/apache2/mods-enabled/userdir.load
       - file: /etc/apache2/mods-enabled/userdir.conf
 ``` 
-Sources and help i got for this `init.sls`:
+Sources and help, in addition to those previously mentioned, i got and used for this `init.sls` configuration:
 - [Jinja Documentation](https://jinja.palletsprojects.com/en/3.1.x/) 
-- [Github - Jinja Issues](https://github.com/pallets/jinja/issues/898) -
+- [Github - Jinja Issues](https://github.com/pallets/jinja/issues/898)
 - [StackOverflow - Read next line in Jinja2](https://stackoverflow.com/questions/38486452/read-next-line-in-jinja2)
 - [Jinja2 for loops](https://ttl255.com/jinja2-tutorial-part-2-loops-and-conditionals/)
 - [Stack Overflow - Splitting in Jinja](https://stackoverflow.com/questions/30515456/split-string-into-list-in-jinja)
@@ -480,7 +480,7 @@ Done!
 ---
 ### b) Asenna Salt herra-orja niin, että molemmat ovat samalla koneella. Voit tehdä ne esimerkiksi uudelle virtuaalikoneelle, niin pääset kokeilemaan puhtaalta pöydältä.
 
-I started this assignment, by installing a fresh new Debian 11 virtual machine to my virtualbox. 
+I started this assignment, by installing a fresh new Debian 11 virtual machine to my virtualbox.    
 Theres no special tricks during the installation, but this is a nice ive guide ive used before: [Tero Karvinen: Install Debian on Virtualbox](https://terokarvinen.com/2021/install-debian-on-virtualbox/)
 
 Note: hostname is `homework`   
