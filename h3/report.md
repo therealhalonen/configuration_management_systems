@@ -272,7 +272,7 @@ For this assignment, i used Github.com, as thats what im familiar with.
 
 As i already had an account there, i started with creating a new repository.   
 From my repository view, clicked green "New" tab.   
-![Image1](https://github.com/therealhalonen/configuration_management_systems/blob/master/h3/res/repo.png)
+![Image1](https://github.com/therealhalonen/configuration_management_systems/blob/master/h3/res/repo.png)   
 That lead to a new place, where i could:
 - Give the new repository:
 	- A name
@@ -282,7 +282,7 @@ That lead to a new place, where i could:
 	- Add .gitignore ( with what you can decide if you want certain files to not be pushed from your local git repo to the remote one)
 	- Choose a license
 
-I made a simple car_dir repo, like this:   
+I made a simple car_nissan_connect repo, like this:   
 ![Image2](https://github.com/therealhalonen/configuration_management_systems/blob/master/h3/res/new_repo.png)   
 Note! Before i clicked `Create repository`, i changed the default branch to `master` which i use as a default locally.   
 And it appeared to https://github.com/therealhalonen/car_nissan_connect   
