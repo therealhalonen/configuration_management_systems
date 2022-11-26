@@ -470,8 +470,8 @@ These last, optional assingments, il probably test later, without reporting:
 f) Vapaaehtoinen: Kokeile Ansiblea.
 g) Vapaaehtoinen: Kokeile Terraformia.
 ```
-Mostly i just read documentations, to figure out how they work and why:
-[Ansible](https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html)
+Mostly i just read documentations, to figure out how they work and why:   
+[Ansible](https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html)   
 [Terraform](https://www.terraform.io/)
 
 ---
