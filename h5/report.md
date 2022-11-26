@@ -29,11 +29,11 @@ Adapter2: Host-only Adapter
 
 ### a) Hello Window Salt! Tee Windowsille SLS-tiedostoon Salt-tila, joka tekee tiedoston nimeltä "suolaikkuna.txt".
 
-Now i started installing Salt for Windows:
-Downloaded (Currently latest version, written: 26.11.2022):
+Now i started installing Salt for Windows:   
+Downloaded (Currently latest version, written: 26.11.2022):   
 [**Salt-Minion-3004.2-1-Py3-AMD64.msi**](https://repo.saltproject.io/windows/Salt-Minion-3004.2-1-Py3-AMD64.msi)   
 
-Opened PowerShell with "Run as administrator"
+Opened PowerShell with "Run as administrator"   
 Browsed to the directory, where the downloaded file was:
 ```powershell
 PS C:\Windows\system32> cd C:\Users\antha\Downloads\
@@ -47,9 +47,9 @@ PS C:\Users\antha\Downloads> msiexec /i Salt-Minion-3004.2-1-Py3-AMD64.msi /nore
 
 *Note: My Debian, Host machine was already configured to work as a Master in previous homeworks, assignments and tests.*
 
-So Master is the IP of my Master.
+So Master is the IP of my Master.   
 Minion is the name i want for my new Windows Minion.   
-After waiting for a while, i closed PowerShell and opened it again.
+After waiting for a while, i closed PowerShell and opened it again.   
 Now i gave a testrun to see if Salt is working:
 ```powershell
 PS C:\Windows\system32> salt-call --local test.ping
@@ -353,7 +353,7 @@ If i understood correctly, Minions ports doesnt even need to be open, as its the
 ---
 ### e) Vapaaehtoinen: Asenna ohjelmia Windowsiin Saltin pkg.installed. Ensin on tämä on toki viriteltävä käyttöön, koska Windowsissa ei ole omaa kattavaa paketinhallintaa.
 
-Now as i did everything needed to control my Windows10 VM from my Debian master, this was pretty straight forward.
+Now as i did everything needed to control my Windows10 VM from my Debian master, this was pretty straight forward.   
 As a source i used:  
 [Tero Karvinen: Control Windows with Salt](https://terokarvinen.com/2018/control-windows-with-salt/)
 
@@ -395,10 +395,10 @@ Worked and to verify, checked my Windows10 VM:
 **Worked!**
 
 To see all the packages available from `pkg.install` after these steps, go:   
-https://github.com/saltstack/salt-winrepo-ng
+https://github.com/saltstack/salt-winrepo-ng   
 It seems to be actively updated.
 
-As a additional bonus i tried [Chocolatey](https://community.chocolatey.org/packages) , which i havent heard of before. But still using mentioned Tero's guide as a source, i installed few things as a test:   
+As a additional bonus i tried [Chocolatey](https://community.chocolatey.org/packages) , which i havent heard of before. Still using mentioned Tero's guide as a source, i installed few things as a test:   
 
 First i needed to install Chocolatey
 ```
