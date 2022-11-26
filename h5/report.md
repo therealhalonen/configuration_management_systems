@@ -16,9 +16,9 @@ Codename:	bullseye
 ```
 
 For assignments done in Windows (Soon to be Minion):   
-**Windows10 Virtualbox VM.
-Activated with legit Product Key.**
-Network:
+**Windows10 Virtualbox VM.   
+Activated with legit Product Key.**   
+Network:   
 ```
 Adapter1: NAT
 Adapter2: Host-only Adapter
