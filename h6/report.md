@@ -415,7 +415,7 @@ vagrant destroy
 So as for what i  needed for this project, it creates:
 - 2x Debian 11 - Servers
 - 1x Ubuntu 22.04 -Desktop 
-- 1x Official 'MSEdge on Win10 X64' 
+- 1x Official 'MSEdge on Win10 X64  
 Automates Salt-minion installation on everyone of them and defines the address of the Master, which in this case is my Host machine, mentioned at the beginning.
 
 
