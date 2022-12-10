@@ -2,7 +2,8 @@
 This is the report of my Saltstack project in the course:   
 [Configuration Management Systems - Palvelinten Hallinta by Tero Karvinen](https://terokarvinen.com/2022/palvelinten-hallinta-2022p2/)
 
-Main sources used, to make this happen:   
+
+### Main sources used, to make this happen:   
 [Tero Karvinen](https://terokarvinen.com):
 - [Himself in the course lecture](https://terokarvinen.com/2022/palvelinten-hallinta-2022p2/)
 - [terokarvinen.com - Everything that includes Salt](https://terokarvinen.com/search/?q=salt)  
@@ -42,6 +43,7 @@ Production:
 	- ubuntu-ws
 - Windows 10:
 	- windows-ws   
+
 Development:
 - 1 or more Debian 11 Server(s)
 	- dev-server(1-)
@@ -52,38 +54,38 @@ Development:
 
 States;   
 First i made the states i wanted to apply:   
-ssh
+**ssh**
 - To get an SSH remote control to servers.
 
-avahi
+**avahi**
 - To servers, in place for DNS.
 
-apache
+**apache**
 - For Webserver to host a site.
 
-samba
+**samba**
 - For Fileserver to host files accessible from local machines.
 
-pkgs
+**pkgs**
 - A state which includes software to install.
 
-update_systems
+**update_systems**
 - Updates package repositories and installed packages in Linux systems.
 
-apps
+**apps**
 - State to update winrepo database and install defined software for Windows.    
 
 *These above, are included in top.sls*
 
 These are added as a bonus and debug, and needs to be run if needed, manually:  
-hello_all:
+**hello_all**
 - Legendary 'Hello World', to demonstrate how different operating systems and environments can be handled.
 
-update_winrepo_ng
+**update_winrepo_ng**
 - A bash script ran manually to update winrepo for windows packages
 - Only Libreoffice is included from the repo, so running this pulls everything in to the right place to local Salt folder.
 
-clean_users
+**clean_users**
 - Needs to be manually run. Not necessary. Clean Vagrant users away, and probably should be used if no users are created and Vagrant is used.
 
 Whole local state environment:
