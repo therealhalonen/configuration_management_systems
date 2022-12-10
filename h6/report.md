@@ -2,7 +2,7 @@
 *Homeworks of sixth class.   
 Creating virtual machines quickly with Vagrant.   
 Automating Salt Master/Minion installation, for virtual machines created with Vagrant.   
-Starting my own project for the course.
+Starting my own project for the course.*
 
 `I used Debian 11, Lenovo Thinkpad E15`
 ```bash
@@ -246,7 +246,7 @@ renki1:
 vagrant@isanta:~$ sudo salt renki1 grains.item ipv4|grep 192
 		- 192.168.56.67
 ```
-**Uuyeah! Working!**
+**Uuyeah! Working!**   
 Theres no need to check ports, or test connections, as it shows everything is established, but due to assignment, i did it anyway!
 
 Minion= `renki1`
@@ -415,7 +415,7 @@ vagrant destroy
 So as for what i  needed for this project, it creates:
 - 2x Debian 11 - Servers
 - 1x Ubuntu 22.04 -Desktop 
-- 1x Official 'MSEdge on Win10 X64' 
+- 1x Official 'MSEdge on Win10 X64  
 Automates Salt-minion installation on everyone of them and defines the address of the Master, which in this case is my Host machine, mentioned at the beginning.
 
 
