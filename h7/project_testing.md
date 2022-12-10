@@ -2,8 +2,9 @@
 
 This is the report of testing my Saltstack project in the course:   
 [Configuration Management Systems - Palvelinten Hallinta by Tero Karvinen](https://terokarvinen.com/2022/palvelinten-hallinta-2022p2/)
-Report of the making: [HERE](https://github.com/therealhalonen/domain_control)
-Project itself: [HERE]
+
+Report of the making: [HERE](https://github.com/therealhalonen/configuration_management_systems/blob/master/h7/report.md)   
+Project itself: [HERE](https://github.com/therealhalonen/domain_control)
 
 When the project was ready, after last fine tunings,  i made some tests to see if its really functional as it should.   
 
