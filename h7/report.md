@@ -12,6 +12,7 @@ Main sources used, to make this happen:
 - [Reports from previous implementation of the same course.](https://heiskanen.rocks/server_management)
 
 Class colleagues from the course.   
+
 [Saltproject Documentation](https://docs.saltproject.io/en/latest/index.html)
 
 ## Intro
@@ -21,13 +22,13 @@ This project and some of the configurations are meant to be tested in Vagrant en
 Configurations are easily edited for a "real"-, or scaled for bigger environment.    
 For example SSH config or the conditional statements for certain operating systems and Minion names.
 
-**Testing of the project can be found [HERE](https://github.com/therealhalonen/configuration_management_systems/blob/master/h6/project_testing.md)**
+**Testing of the project can be found [HERE](https://github.com/therealhalonen/configuration_management_systems/blob/master/h7/project_testing.md)**
 
 **Project itself, can be found [HERE](https://github.com/therealhalonen/domain_control)**
 
 ## The Project
 
-#### States and environment
+### States and environment
 ---
 [SaltProject - States](https://docs.saltproject.io/en/latest/ref/states/index.html)   
 [My: States](https://github.com/therealhalonen/domain_control/tree/master/srv/salt)   
@@ -53,26 +54,35 @@ States;
 First i made the states i wanted to apply:   
 ssh
 - To get an SSH remote control to servers.
+
 avahi
 - To servers, in place for DNS.
+
 apache
 - For Webserver to host a site.
+
 samba
 - For Fileserver to host files accessible from local machines.
+
 pkgs
 - A state which includes software to install.
+
 update_systems
 - Updates package repositories and installed packages in Linux systems.
+
 apps
-- State to update winrepo database and install defined software for Windows. 
-*These are included in top.sls*
+- State to update winrepo database and install defined software for Windows.    
+
+*These above, are included in top.sls*
 
 These are added as a bonus and debug, and needs to be run if needed, manually:  
 hello_all:
 - Legendary 'Hello World', to demonstrate how different operating systems and environments can be handled.
+
 update_winrepo_ng
 - A bash script ran manually to update winrepo for windows packages
 - Only Libreoffice is included from the repo, so running this pulls everything in to the right place to local Salt folder.
+
 clean_users
 - Needs to be manually run. Not necessary. Clean Vagrant users away, and probably should be used if no users are created and Vagrant is used.
 
@@ -122,10 +132,7 @@ Whole local state environment:
 ``` 
 Okay so as seen in the `tree` there looks to be two environments.   
 The states are placed by environment, and by which machine they belong to, or do they belong to every machine. 
-Those are explained more detailed in:   
-[ Topfile]    
-And   
-[Master Config]
+Those are explained more detailed in the **Topfile** and **Master Config** -sections
 
 ### Master Config
 --- 
@@ -171,7 +178,7 @@ Few states in this project, for example SSH, defines a password, that is include
 In this project, the minion config must include the following, to work as should:
  - IP address of the Master
  - Environment it belongs to
- - Minion id. Ss seen in Top.sls, its good to be named according to what states it will get.
+ - Minion id. As seen in Top.sls, its good to be named according to what states it will get.
 
 In this project, they are all put together automatically in Vagrantfile, but if more machines are included, or using this in a real-life environment, they should be configured with those values in mind manually.
 
@@ -205,11 +212,13 @@ Production
 - 2x Debian 11 - servers
 - 1x Ubuntu 22.04 Desktop
 - 1x Official free from Microsoft `EdgeOnWindows10` 
-While the other creates:
+
+While the other creates:   
 Development   
-- 2x Debian 11 - server
+- 2x Debian 11 - servers
 - 1x Fedora 36 -server
-- 1x Ubuntu 22.04 - server
+- 1x Ubuntu 22.04 - server   
+
 For Virtualbox.   
 It will also define the master, and configure each machine as a minion, and defines the minion config as it should be for the project to work.
 
