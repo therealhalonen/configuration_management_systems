@@ -12,6 +12,8 @@ This is the report of my Saltstack project in the course:
 - Himself 
 - [Reports from previous implementation of the same course.](https://heiskanen.rocks/server_management)
 
+[Miljonka: Mozilla-repo workaround](https://github.com/miljonka/miniproject/blob/main/Starterpack/init.sls)
+
 Class colleagues from the course.   
 
 [Saltproject Documentation](https://docs.saltproject.io/en/latest/index.html)
