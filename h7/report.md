@@ -3,6 +3,16 @@ This is the report of my Saltstack project in the course:
 [Configuration Management Systems - Palvelinten Hallinta by Tero Karvinen](https://terokarvinen.com/2022/palvelinten-hallinta-2022p2/)
 
 
+`I used Debian 11, Lenovo Thinkpad E15`
+``` 
+~$ lsb_release -a
+No LSB modules are available.
+Distributor ID:	Debian
+Description:	Debian GNU/Linux 11 (bullseye)
+Release:	11
+Codename:	bullseye
+```
+
 ### Main sources used, to make this happen:   
 [Tero Karvinen](https://terokarvinen.com):
 - [Himself in the course lecture](https://terokarvinen.com/2022/palvelinten-hallinta-2022p2/)
