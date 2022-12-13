@@ -162,7 +162,7 @@ Everything is detailed inside the file with comments, to help remember and under
 
 ### Pillar
 ---- 
-[SaltProject - Pillar](https://docs.saltproject.io/en/latest/topics/tutorials/pillar.html)
+[SaltProject - Pillar](https://docs.saltproject.io/en/latest/topics/tutorials/pillar.html)   
 [My: Pillar](https://github.com/therealhalonen/domain_control/tree/master/srv/pillar)
 
 `/srv/pillar`
