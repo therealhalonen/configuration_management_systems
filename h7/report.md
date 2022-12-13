@@ -68,15 +68,18 @@ States;
 First i made the states i wanted to apply:   
 **ssh**
 - To get an SSH remote control to servers.
+- Change port to 8888
+- Allow only user `supreme`
 
 **avahi**
-- To servers, in place for DNS.
+- To servers, in place to mimic DNS.
 
 **apache**
 - For Webserver to host a site.
 
 **samba**
 - For Fileserver to host files accessible from local machines.
+- Accessible as `sambauser`
 
 **pkgs**
 - A state which includes software to install.
