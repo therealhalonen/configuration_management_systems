@@ -88,7 +88,7 @@ These are added as a bonus and debug, and needs to be run if needed, manually:
 - Only Libreoffice is included from the repo, so running this pulls everything in to the right place to local Salt folder.
 
 **clean_users**
-- Needs to be manually run. Not necessary. Clean Vagrant users away, and probably should be used if no users are created and Vagrant is used.
+- Needs to be manually run. Not necessary. Clean Vagrant users away, and shouldn't be used if no users are created when Vagrant is used.
 
 Whole local state environment:
 `/srv/salt:`
